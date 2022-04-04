@@ -1,6 +1,6 @@
 <?php
 $error = '';
-if (isset($_POST['add'])) {
+if (isset($_POST['Save'])) {
 	include_once 'connection.php';
 	$c = 0;
 	$SKU = $_POST['SKU'];
@@ -20,8 +20,7 @@ if (isset($_POST['add'])) {
 		}
 	}
 	if ($error == '') {
-		if ($_POST['type'] == '1') {
-			$Size = $_POST['Size'];
+		if (isset($_POST['Size'])){
 			$Weight = 0;
 			$Height = 0;
 			$Width = 0;
@@ -29,7 +28,7 @@ if (isset($_POST['add'])) {
 			$insert_product = "INSERT INTO  products ( SKU ,  Name ,  Price ,  Size ,  Weight ,  Height ,  Width ,  Length ) VALUES ('$SKU','$Name','$Price' ,'$Size' ,'$Weight' ,$Height , $Width,'$Length')";
 			$connect->query($insert_product);
 			header("Location:../product.php");
-		} else if ($_POST['type'] == '2') {
+		} else if (isset($_POST['Weight'])) {
 			$Size = 0;
 			$Weight = $_POST['Weight'];
 			$Height = 0;

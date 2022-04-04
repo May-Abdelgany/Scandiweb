@@ -1,36 +1,44 @@
 /// <reference path="../typings/index.d.ts" />
-//method="post" action="../function/add_product.php"
-var data=[];
 function change(x) {
     if (x == '1') {
-        $('.DVD-disc').removeClass("visually-hidden");
-        $('.Book').addClass("visually-hidden");
-        $('.Furniture').addClass("visually-hidden");
-        $('#Weight').removeAttr("required");
-        $('#Size').setAttribute("required");
-        $('#Height').removeAttr("required");
-        $('#Width').removeAttr("required");
-        $('#Length').removeAttr("required");
+        $('.show').html(`<div class="form-group row my-3 DVD-disc">
+        <label for="Size" class="col-sm-3 col-form-label fw-bold">Size(MB)</label>
+        <div class="col-sm-9">
+            <input type="number" class="form-control" id="size" name="Size" required>
+        </div>
+        <p class="fw-bold mt-3 ">please,provide size with (MB).</p>
+    </div>`);
     }
     else if (x == '2') {
-        $('.Book').removeClass("visually-hidden");
-        $('.DVD-disc').addClass("visually-hidden");
-        $('.Furniture').addClass("visually-hidden");
-        $('#Size').removeAttr("required");
-        $('#Weight').setAttribute("required");
-        $('#Height').removeAttr("required");
-        $('#Width').removeAttr("required");
-        $('#Length').removeAttr("required");
+        $('.show').html(`<div class="form-group row my-3  Book">
+      <label for="Weight" class="col-sm-3 col-form-label fw-bold">Weight(KG)</label>
+      <div class="col-sm-9">
+          <input type="number" class="form-control" id="weight" name="Weight" required>
+      </div>
+      <p class="fw-bold mt-3">please,provide weight with (KG).</p>
+  </div>`);
     }
     else if (x == '3') {
-        $('.Furniture').removeClass("visually-hidden");
-        $('.Book').addClass("visually-hidden");
-        $('.DVD-disc').addClass("visually-hidden");
-        $('#Size').removeAttr("required");
-        $('#Weight').removeAttr("required");
-        $('#Height').setAttribute("required");
-        $('#Width').setAttribute("required");
-        $('#Length').setAttribute("required");
+       $('show').html(`<div class="Furniture ">
+       <div class="form-group row my-3">
+           <label for="Height" class="col-sm-3 col-form-label fw-bold">Height</label>
+           <div class="col-sm-9">
+               <input type="number" class="form-control" id="height" name="Height" required>
+           </div>
+       </div>
+       <div class="form-group row my-3">
+           <label for="Width" class="col-sm-3 col-form-label fw-bold">Width</label>
+           <div class="col-sm-9">
+               <input type="number" class="form-control" id="width" name="Width" required>
+           </div>
+       </div>
+       <div class="form-group row my-3">
+           <label for="Length" class="col-sm-3 col-form-label fw-bold">Length</label>
+           <div class="col-sm-9">
+               <input type="number" class="form-control" id="length" name="Length" required>
+           </div>
+       </div>
+   </div>`)
     }
 
 }

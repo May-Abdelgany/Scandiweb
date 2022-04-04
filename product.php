@@ -13,11 +13,11 @@
 
 <body>
     <div class="container my-5">
-        <h2 class="d-inline">product list</h2>
         <form method="post" action="function/delete_product.php">
+            <h2 class="d-inline">product list</h2>
             <div class="float-end">
                 <a href="view/add_product.php" class="btn btn-outline-primary">ADD</a>
-                <input id="delete" class="btn btn-outline-danger" type="submit" name="delete" value="MASS DELETE">
+                <input id="delete-product-btn" class="btn btn-outline-danger" type="submit" name="delete" value="MASS DELETE">
             </div>
             <div class="clear"></div>
             <hr>
@@ -53,7 +53,7 @@
                 <div class="col-lg-3 col-md-6 mb-5">
                     <div class="p-2 text-center fw-bold border border-2">
                         <div class="form-check">
-                            <input id="check[]" class="form-check-input checkbox" type="checkbox" name='check[]' value="<?php echo $id[$i]; ?>">
+                            <input id="check[]" class="form-check-input delete-checkbox" type="checkbox" name='check[]' value="<?php echo $id[$i]; ?>">
                         </div>
                         <p class="mb-1"> <?php echo $SKU[$i]; ?></p>
                         <p class="my-1"> <?php echo $Name[$i]; ?></p>
@@ -64,9 +64,9 @@
                         <?php
                         }
                         if ($Weight[$i] != 0) { ?>
-                            <p class="my-1">weight: <?php echo $Weight[$i]. "MB"; ?></p>
+                            <p class="my-1">weight: <?php echo $Weight[$i] . "MB"; ?></p>
                         <?php
-                        } else  if ($Height[$i] != 0 ||$Width[$i] != 0||$Length[$i] != 0) { ?>
+                        } else  if ($Height[$i] != 0 || $Width[$i] != 0 || $Length[$i] != 0) { ?>
                             <p class="my-1">dimensions: <?php echo $Height[$i] . "<small>x</small>" . $Width[$i] . "<small>x</small>" . $Length[$i]; ?></p>
                         <?php
                         }
