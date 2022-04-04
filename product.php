@@ -17,7 +17,7 @@
             <h2 class="d-inline">product list</h2>
             <div class="float-end">
                 <a href="view/add_product.php" class="btn btn-outline-primary">ADD</a>
-                <input id="delete-product-btn" class="btn btn-outline-danger" type="submit" name="delete" value="MASS DELETE">
+                <input id="delete-productbtn" class="btn btn-outline-danger" type="submit" name="delete" value="MASS DELETE">
             </div>
             <div class="clear"></div>
             <hr>
