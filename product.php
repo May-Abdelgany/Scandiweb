@@ -16,8 +16,8 @@
         <form method="post" action="function/delete_product.php">
             <h2 class="d-inline">product list</h2>
             <div class="float-end">
-                <a href="view/add_product.php" class="btn btn-outline-primary">ADD</a>
-                <input id="delete-productbtn" class="btn btn-outline-danger" type="submit" name="delete" value="MASS DELETE">
+                <button type="button" onclick="window.location.href='view/add_product.php'" class="btn btn-outline-primary">ADD</button>
+                <button  id="delete-product-btn" type="submit" name="delete" class="btn btn-outline-danger">MASS DELETE</button>   
             </div>
             <div class="clear"></div>
             <hr>

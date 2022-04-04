@@ -21,6 +21,7 @@ if (isset($_POST['Save'])) {
 	}
 	if ($error == '') {
 		if (isset($_POST['Size'])){
+			$Size=$_POST['Size'];
 			$Weight = 0;
 			$Height = 0;
 			$Width = 0;

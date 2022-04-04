@@ -12,8 +12,8 @@
 		<form method="post" action="../function/add_product.php" class="form-group" id='product_form'>
 			<h2 class="d-inline">Product Add</h2>
 			<div class="float-end">
-				<input type="submit" name="Save" value="Save" class="btn btn-outline-primary save">
-				<a href="../product.php" class="btn btn-outline-danger">Cancel</a>
+				<button type="submit" name="Save" class="btn btn-outline-primary">Save</button>
+				<button tybe="button" onclick="window.location.href='../product.php'" class="btn btn-outline-danger">Cancel</button>
 			</div>
 			<div style="clear: both;"></div>
 			<hr>
