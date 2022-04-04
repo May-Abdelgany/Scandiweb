@@ -75,19 +75,19 @@
 						<div class="form-group row my-3">
 							<label for="Height" class="col-sm-3 col-form-label fw-bold">Height</label>
 							<div class="col-sm-9">
-								<input type="number" class="form-control" id="Height" name="Height" >
+								<input type="number" class="form-control" id="Height" name="Height">
 							</div>
 						</div>
 						<div class="form-group row my-3">
 							<label for="Width" class="col-sm-3 col-form-label fw-bold">Width</label>
 							<div class="col-sm-9">
-								<input type="number" class="form-control" id="Width" name="Width" >
+								<input type="number" class="form-control" id="Width" name="Width">
 							</div>
 						</div>
 						<div class="form-group row my-3">
 							<label for="Length" class="col-sm-3 col-form-label fw-bold">Length</label>
 							<div class="col-sm-9">
-								<input type="number" class="form-control" id="Length" name="Length" >
+								<input type="number" class="form-control" id="Length" name="Length">
 							</div>
 						</div>
 					</div>
